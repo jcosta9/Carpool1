@@ -20,6 +20,12 @@ public class MeusEventos extends ActionBarActivity {
 		getMenuInflater().inflate(R.menu.meus_eventos, menu);
 		return true;
 	}
+	
+	//TODO: Método que pega os dados dos eventos que o usuário confirmou a presença
+	// e o joga numa lista ordenada por data de acontecimento, exibindo tal na tela
+	public void displayCurrentEvents(){
+		
+	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
