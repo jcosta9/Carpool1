@@ -28,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
         		public void onClick(View v){
         			//EditText login = (EditText)findViewById(R.id.editText1);
         			//EditText senha = (EditText)findViewById(R.id.editText2);
-        			Intent intent1 = new Intent(MainActivity.this, Pagina3.class);
+        			Intent intent1 = new Intent(MainActivity.this, MeusEventos.class);
 					///String login = findViewById(R.id.editText1).toString();
 					//String senha = findViewById(R.id.editText1).toString();
 				//intent1.putExtra("login", login);

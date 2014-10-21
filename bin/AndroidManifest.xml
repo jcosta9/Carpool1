@@ -32,6 +32,22 @@
             android:name=".Pagina3"
             android:label="@string/title_activity_pagina3" >
         </activity>
+        <activity
+            android:name="com.example.carpool.NovoEvento"
+            android:label="@string/title_activity_novo_evento" >
+        </activity>
+        <activity
+            android:name="com.example.carpool.Pesquisar"
+            android:label="@string/title_activity_pesquisar" >
+        </activity>
+        <activity
+            android:name="com.example.carpool.MeusEventos"
+            android:label="@string/title_activity_meus_eventos" >
+        </activity>
+        <activity
+            android:name="com.example.carpool.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
     </application>
 
 </manifest>
