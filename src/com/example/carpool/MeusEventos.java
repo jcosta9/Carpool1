@@ -5,6 +5,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+
+import com.example.carpool.events.Item;
+import com.example.carpool.events.MyAdapter;
+
+import android.app.ListActivity;
 
 public class MeusEventos extends ActionBarActivity {
 
@@ -12,6 +20,13 @@ public class MeusEventos extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_meus_eventos);
+		
+		// passa o contexto e os dados para o adaptador
+		MyAdapter adapter = new MyAdapter(this, generateData());
+		//Pega a listView do arquivo xml
+		ListView listView = (ListView) findViewById(R.id.listView);
+		
+		listView.setAdapter(adapter);
 	}
 
 	@Override
@@ -27,6 +42,16 @@ public class MeusEventos extends ActionBarActivity {
 		
 	}
 
+	//Esse método será substituído pelo DisplayCurrentEvents() qndo este for implementado
+	private ArrayList<Item> generateData(){
+        ArrayList<Item> items = new ArrayList<Item>();
+        items.add(new Item("Evento 1","Primeiro evento da Lista"));
+        items.add(new Item("Evento 2","Segundo evento da Lista"));
+        items.add(new Item("Evento 3","Third evento on the list"));
+ 
+        return items;
+    }
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will

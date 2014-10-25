@@ -1,14 +1,21 @@
 package com.example.carpool.events;
 
+import android.media.Image;
+
+
 public class Item {
 	String titulo;
 	String descricao;
+	//Image icone;
 	
 	
 	//Responsável por criar cada item que será exibido na tela de Eventos
-	public Item(String titulo, String descricao){
+	//TODO: Adicionar a imagem que identificará se para tal evento o usuário
+	//poderá dar carona.
+	public Item(String titulo, String descricao){//, Image icone){
 		this.descricao = descricao;
 		this.titulo = titulo;
+		//this.icone = icone;
 	}
 	
 	//gets and sets
