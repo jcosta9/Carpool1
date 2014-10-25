@@ -25,14 +25,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Pagina2"
-            android:label="@string/title_activity_pagina2" >
-        </activity>
-        <activity
-            android:name=".Pagina3"
-            android:label="@string/title_activity_pagina3" >
-        </activity>
-        <activity
             android:name="com.example.carpool.NovoEvento"
             android:label="@string/title_activity_novo_evento" >
         </activity>

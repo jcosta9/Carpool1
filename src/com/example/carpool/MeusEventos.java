@@ -9,10 +9,10 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import com.example.carpool.events.Item;
-import com.example.carpool.events.MyAdapter;
+import com.example.carpool.supportclass.Evento;
+import com.example.carpool.supportclass.MyAdapter;
 
-import android.app.ListActivity;
+//import android.app.ListActivity;
 
 public class MeusEventos extends ActionBarActivity {
 
@@ -43,11 +43,11 @@ public class MeusEventos extends ActionBarActivity {
 	}
 
 	//Esse método será substituído pelo DisplayCurrentEvents() qndo este for implementado
-	private ArrayList<Item> generateData(){
-        ArrayList<Item> items = new ArrayList<Item>();
-        items.add(new Item("Evento 1","Primeiro evento da Lista"));
-        items.add(new Item("Evento 2","Segundo evento da Lista"));
-        items.add(new Item("Evento 3","Third evento on the list"));
+	private ArrayList<Evento> generateData(){
+        ArrayList<Evento> items = new ArrayList<Evento>();
+        items.add(new Evento("Evento 1","Primeiro evento da Lista"));
+        items.add(new Evento("Evento 2","Segundo evento da Lista"));
+        items.add(new Evento("Evento 3","Third evento on the list"));
  
         return items;
     }
