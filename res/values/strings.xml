@@ -16,6 +16,9 @@
 	<string name="data">Data</string>
 	<string name="descricao">Descrição</string>
 	<string name="criar">Criar</string>
+	<string name="registrar">Registrar</string>
+	<string name="entrar">Entrar</string>
+	<string name="esquecisenha">Esqueci a Senha</string>
     <color name="orange">#ED9121</color>
 
     <string name="action_search">Pesquisar</string>
