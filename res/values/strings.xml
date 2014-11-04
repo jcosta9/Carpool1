@@ -12,13 +12,27 @@
     <string name="title_activity_pagina2">SlidingMenu</string>
     <string name="hello_world">Hello world!</string>
     <string name="imgdesc">imgdesc</string>
-	<string name="nome">Nome do Evento</string>
-	<string name="data">Data</string>
-	<string name="descricao">Descrição</string>
-	<string name="criar">Criar</string>
-	<string name="registrar">Registrar</string>
-	<string name="entrar">Entrar</string>
-	<string name="esquecisenha">Esqueci a Senha</string>
+    <string name="nome">Nome do Evento</string>
+    <string name="data">Data</string>
+    <string name="descricao">Descrição</string>
+    <string name="criar">Criar</string>
+    <string name="registrar">Registrar</string>
+    <string name="entrar">Entrar</string>
+    <string name="esquecisenha">Esqueci a Senha</string>
+    <string name="nomeusuario">Nome</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="telefone">Telefone</string>
+    <string name="endereco">Endereço</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="uf">Estado</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="enviar">Enviar</string>
+    <string name="reset">Enviar Email</string>
+    <string name="voltar">Voltar</string>
+    <string name="alterarSenha">Alterar Senha</string>
+    <string name="passwordRecMsg">Um email de recuperação foi enviado para você!</string>
+
     <color name="orange">#ED9121</color>
 
     <string name="action_search">Pesquisar</string>
@@ -35,5 +49,8 @@
     <string name="title_activity_pesquisar">Pesquisar</string>
     <string name="title_activity_meus_eventos">Meus Eventos</string>
     <string name="title_activity_settings">Configurações</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_password_reset">PasswordReset</string>
+    <string name="title_activity_change_password">ChangePassword</string>
 
 </resources>

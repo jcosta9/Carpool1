@@ -1,4 +1,9 @@
-package com.example.carpool;
+package com.example.carpool.login;
+
+import com.example.carpool.MeusEventos;
+import com.example.carpool.R;
+import com.example.carpool.R.id;
+import com.example.carpool.R.layout;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -19,7 +24,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        Button button = (Button)findViewById(R.id.button1);
+        Button button = (Button)findViewById(R.id.butaoCadastro);
         button.setOnClickListener(new OnClickListener(){
         		public void onClick(View v){
         			//EditText login = (EditText)findViewById(R.id.editText1);

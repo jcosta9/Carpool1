@@ -8,14 +8,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.carpool.MainActivity" >
+    tools:context="com.example.carpool.login.MainActivity" >
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/cpNomeUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_alignRight="@+id/textView1"
+        android:layout_alignLeft="@+id/cadastro"
+        android:layout_alignRight="@+id/cadastro"
         android:layout_centerVertical="true"
         android:ems="10"
         android:hint="@string/login"
@@ -25,17 +25,17 @@
     </EditText>
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText1"
+        android:layout_above="@+id/cpNomeUs"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="28dp"
         android:text="@string/BemVindo"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/butaoCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText2"
@@ -48,8 +48,8 @@
         android:id="@+id/registrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button1"
+        android:layout_alignLeft="@+id/butaoCadastro"
+        android:layout_below="@+id/butaoCadastro"
         android:layout_marginLeft="7dp"
         android:layout_marginTop="23dp"
         android:text="@string/registrar" />
@@ -58,9 +58,9 @@
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/cadastro"
+        android:layout_alignRight="@+id/cpNomeUs"
+        android:layout_below="@+id/cpNomeUs"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/senha"
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/registrar"
         android:layout_alignBottom="@+id/registrar"
-        android:layout_alignRight="@+id/button1"
+        android:layout_alignRight="@+id/butaoCadastro"
         android:text="@string/esquecisenha" />
 
 </RelativeLayout>

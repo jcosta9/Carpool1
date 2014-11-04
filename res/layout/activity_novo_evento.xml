@@ -9,7 +9,7 @@
     tools:context="com.example.carpool.NovoEvento" >
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/cpNomeUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -27,8 +27,8 @@
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/cpNomeUs"
+        android:layout_below="@+id/cpNomeUs"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/data"
@@ -45,7 +45,7 @@
         android:inputType="textMultiLine" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/butaoCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText3"

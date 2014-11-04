@@ -12,12 +12,10 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-         >
+        android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            >
+            android:name=".login.MainActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,20 +23,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.carpool.NovoEvento"
+            android:name=".NovoEvento"
             android:label="@string/title_activity_novo_evento" >
         </activity>
         <activity
-            android:name="com.example.carpool.Pesquisar"
+            android:name=".Pesquisar"
             android:label="@string/title_activity_pesquisar" >
         </activity>
         <activity
-            android:name="com.example.carpool.MeusEventos"
+            android:name=".MeusEventos"
             android:label="@string/title_activity_meus_eventos" >
         </activity>
         <activity
-            android:name="com.example.carpool.Settings"
+            android:name=".Settings"
             android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".login.Register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".login.PasswordReset"
+            android:label="@string/title_activity_password_reset" >
+        </activity>
+        <activity
+            android:name="com.example.carpool.login.ChangePassword"
+            android:label="@string/title_activity_change_password" >
         </activity>
     </application>
 
