@@ -35,7 +35,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/butaoCadastro"
+        android:id="@+id/btCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText2"
@@ -43,16 +43,6 @@
         android:layout_below="@+id/editText2"
         android:layout_marginTop="18dp"
         android:text="@string/botao" />
-
-    <TextView
-        android:id="@+id/registrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/butaoCadastro"
-        android:layout_below="@+id/butaoCadastro"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="23dp"
-        android:text="@string/registrar" />
 
     <EditText
         android:id="@+id/editText2"
@@ -70,9 +60,17 @@
         android:id="@+id/esquecisenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/registrar"
-        android:layout_alignBottom="@+id/registrar"
-        android:layout_alignRight="@+id/butaoCadastro"
+        android:layout_alignLeft="@+id/btCadastro"
+        android:layout_below="@+id/btCadastro"
+        android:layout_marginTop="19dp"
         android:text="@string/esquecisenha" />
+
+    <TextView
+        android:id="@+id/registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btCadastro"
+        android:layout_alignTop="@+id/esquecisenha"
+        android:text="@string/registrar" />
 
 </RelativeLayout>
