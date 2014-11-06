@@ -9,7 +9,7 @@
     tools:context="com.example.carpool.NovoEvento" >
 
     <EditText
-        android:id="@+id/cpNomeUs"
+        android:id="@+id/cpCadastroNomeUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -24,21 +24,21 @@
     </EditText>
 
     <EditText
-        android:id="@+id/cpSenhaUs"
+        android:id="@+id/cpCadastroSobrUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/cpNomeUs"
-        android:layout_below="@+id/cpNomeUs"
+        android:layout_alignLeft="@+id/cpCadastroNomeUs"
+        android:layout_below="@+id/cpCadastroNomeUs"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/data"
         android:inputType="date" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/cpCadastroEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/cpSenhaUs"
+        android:layout_alignLeft="@+id/cpCadastroSobrUs"
         android:layout_centerVertical="true"
         android:ems="10"
         android:hint="@string/descricao"
@@ -48,7 +48,7 @@
         android:id="@+id/butaoCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignLeft="@+id/cpCadastroEmail"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="72dp"
         android:layout_marginLeft="56dp"

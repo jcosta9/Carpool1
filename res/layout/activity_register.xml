@@ -9,35 +9,37 @@
     tools:context="com.example.carpool.login.Register" >
 
     <EditText
-        android:id="@+id/cpNomeUs"
+        android:id="@+id/cpCadastroNomeUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/nomeUsuario"
         android:layout_alignBottom="@+id/nomeUsuario"
         android:layout_alignParentRight="true"
-        android:ems="10"
-        android:text="@string/nomeusuario" />
+        android:hint="@string/nomeusuario"
+        android:ems="10" />
 
     <EditText
-        android:id="@+id/cpSenhaUs"
+        android:id="@+id/cpCadastroSobrUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/sobrenome"
         android:layout_alignBottom="@+id/sobrenome"
-        android:layout_alignLeft="@+id/cpNomeUs"
+        android:layout_alignLeft="@+id/cpCadastroNomeUs"
+        android:hint="@string/sobrenome"
         android:ems="10" >
 
         <requestFocus />
     </EditText>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/cpCadastroEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/email"
         android:layout_alignBottom="@+id/email"
-        android:layout_alignLeft="@+id/cpSenhaUs"
-        android:ems="10" />
+        android:layout_alignLeft="@+id/cpCadastroSobrUs"
+        android:ems="10"
+        android:hint="@string/login" />
 
     <TextView
         android:id="@+id/cidade"
@@ -49,51 +51,57 @@
         android:text="@string/cidade" />
 
     <EditText
-        android:id="@+id/EditText01"
+        android:id="@+id/cpCadastroTel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/telefone"
-        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignLeft="@+id/cpCadastroSenha"
+        android:hint="@string/telefone"
         android:ems="10" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/cpCadastroSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/EditText01"
-        android:layout_alignLeft="@+id/editText3"
+        android:layout_above="@+id/cpCadastroTel"
+        android:layout_alignLeft="@+id/cpCadastroEmail"
+        android:hint="@string/senha"
         android:ems="10" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/cpCadastroCidade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/cidade"
-        android:layout_alignLeft="@+id/editText6"
+        android:layout_alignLeft="@+id/cpCadastroBairro"
+        android:hint="@string/cidade"
         android:ems="10" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/cpCadastroEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bairro"
-        android:layout_alignLeft="@+id/EditText01"
+        android:layout_alignLeft="@+id/cpCadastroTel"
+        android:hint="@string/endereco"
         android:ems="10" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/cpCadastroBairro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/bairro"
-        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignLeft="@+id/cpCadastroEnd"
+        android:hint="@string/bairro"
         android:ems="10" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/cpCadastroEstado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/uf"
-        android:layout_alignLeft="@+id/editText7"
+        android:layout_alignLeft="@+id/cpCadastroCidade"
+        android:hint="@string/uf"
         android:ems="10" />
 
     <TextView
@@ -101,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/nomeUsuario"
-        android:layout_below="@+id/cpSenhaUs"
+        android:layout_below="@+id/cpCadastroSobrUs"
         android:layout_marginTop="21dp"
         android:text="@string/login" />
 
@@ -124,7 +132,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/butaoCadastro"
+        android:id="@+id/btCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -136,7 +144,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/email"
-        android:layout_below="@+id/cpNomeUs"
+        android:layout_below="@+id/cpCadastroNomeUs"
         android:layout_marginTop="17dp"
         android:text="@string/sobrenome" />
 
@@ -154,7 +162,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/nomeUsuario"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/cpCadastroEmail"
         android:layout_marginTop="15dp"
         android:text="@string/senha" />
 
@@ -184,5 +192,11 @@
         android:layout_below="@+id/cidade"
         android:layout_marginTop="14dp"
         android:text="@string/uf" />
+    <TextView
+    android:id="@+id/cadastroMsg" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    />
 
 </RelativeLayout>

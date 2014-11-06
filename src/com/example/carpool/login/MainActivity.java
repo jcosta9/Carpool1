@@ -64,12 +64,12 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        btlogin = (Button)findViewById(R.id.btCadastro);
+        btlogin = (Button)findViewById(R.id.btCadastrar);
         btEsqSenha = (TextView)findViewById(R.id.esquecisenha);
         btRegistrar = (TextView)findViewById(R.id.registrar);
         tv = (TextView)findViewById(R.id.tv);
-        email = (EditText)findViewById(R.id.cpNomeUs);
-		senha = (EditText)findViewById(R.id.cpSenhaUs);
+        email = (EditText)findViewById(R.id.cpCadastroNomeUs);
+		senha = (EditText)findViewById(R.id.cpCadastroSobrUs);
         
         
         /**
@@ -118,12 +118,14 @@ public class MainActivity extends ActionBarActivity {
         	}
         });
     }
-
+    /**
+     * TODO: Tratamento de excessao.
+     */
     void login(){
         try{           
               
             httpclient=new DefaultHttpClient();
-            httppost= new HttpPost("http://192.168.1.103/carpool/check.php"); // make sure the url is correct.
+            httppost= new HttpPost("http://192.168.1.103/carpool/login.php"); // make sure the url is correct.
             //add your data
             nameValuePairs = new ArrayList<NameValuePair>(2);
             // Always use the same variable name for posting i.e the android side variable name and php side variable name should be similar,

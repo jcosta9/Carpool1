@@ -11,7 +11,7 @@
     tools:context="com.example.carpool.login.MainActivity" >
 
     <EditText
-        android:id="@+id/cpNomeUs"
+        android:id="@+id/cpCadastroNomeUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/cadastro"
@@ -28,29 +28,29 @@
         android:id="@+id/cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/cpNomeUs"
+        android:layout_above="@+id/cpCadastroNomeUs"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="28dp"
         android:text="@string/BemVindo"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/btCadastro"
+        android:id="@+id/btCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/cpSenhaUs"
-        android:layout_alignRight="@+id/cpSenhaUs"
-        android:layout_below="@+id/cpSenhaUs"
+        android:layout_alignLeft="@+id/cpCadastroSobrUs"
+        android:layout_alignRight="@+id/cpCadastroSobrUs"
+        android:layout_below="@+id/cpCadastroSobrUs"
         android:layout_marginTop="18dp"
         android:text="@string/botao" />
 
     <EditText
-        android:id="@+id/cpSenhaUs"
+        android:id="@+id/cpCadastroSobrUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/cadastro"
-        android:layout_alignRight="@+id/cpNomeUs"
-        android:layout_below="@+id/cpNomeUs"
+        android:layout_alignRight="@+id/cpCadastroNomeUs"
+        android:layout_below="@+id/cpCadastroNomeUs"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/senha"
@@ -60,8 +60,8 @@
         android:id="@+id/esquecisenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btCadastro"
-        android:layout_below="@+id/btCadastro"
+        android:layout_alignLeft="@+id/btCadastrar"
+        android:layout_below="@+id/btCadastrar"
         android:layout_marginTop="19dp"
         android:text="@string/esquecisenha" />
 
@@ -69,7 +69,7 @@
         android:id="@+id/registrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/btCadastro"
+        android:layout_alignRight="@+id/btCadastrar"
         android:layout_alignTop="@+id/esquecisenha"
         android:text="@string/registrar" />
     <TextView
