@@ -24,7 +24,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/cpSenhaUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/cpNomeUs"
@@ -38,7 +38,7 @@
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignLeft="@+id/cpSenhaUs"
         android:layout_centerVertical="true"
         android:ems="10"
         android:hint="@string/descricao"
